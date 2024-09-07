@@ -1,0 +1,9 @@
+En vanlig design mönster för webbsidor är att footer-elementen är alltid på botten av viewporten, oavsett mängden av main-content.
+Sättet som jag föredrar för att uppnå det är följande:
+
+    1. Gör så att html-elementen och body-elementen har min-height: 100vh; (100vh = 100% av viewportens högt)
+    2. Gör så att bodyn är en flexbox med flex-direction: column; (vetikal orientering);
+    3. Ge flex-grow: 1; till main-elementen.
+
+På det här sättet ska bodyn alltid vara i minst 100% lik högt som viewporten.
+Main-elementen ska växa (flex-grow: 1;) och då knuffa footern hela vägen ner till botten, till och med när det inte finns grej i mainen.

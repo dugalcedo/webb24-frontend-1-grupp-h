@@ -1,0 +1,62 @@
+/* Den här CSS filen kan linkas på varje sida */
+/* Den kan innehålla "global" CSS kod som används på varje sida */
+
+/* Google font "Nunito Sans" */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Varför? Se bodyflex.txt [1} */
+    min-height: 100vh;
+}
+
+body {
+
+    /* 
+        Body-elementen kommer med 8px margin som standard. 
+        Om vi vill at några elementer (tex. bannern i detail.html) når hela vägen till kanten av viewporten, så måste vi ta bort bodys margin.
+        Annars kommer det vara 8px whitespace runt hela sidan.
+    */
+    margin: 0;
+
+
+    font-family: "Nunito Sans", sans-serif;
+
+    /* Varför? Se bodyflex.txt [2] */
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    /* Varför? Se bodyflex.txt [3] */
+    flex-grow: 1;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+footer nav img {
+    /* img elementer är inline-elementer som standard. På grund av detta får dem en liten whitespace på botten. Det här leder till att nav-en ser ojämt ut, så jag gör dem block elementer. -Doug */
+    display: block;
+}
+
+footer nav a {
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    filter: brightness(0);
+}
+
+footer .profil-bild {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
