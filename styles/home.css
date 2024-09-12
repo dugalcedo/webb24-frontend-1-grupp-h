@@ -1,0 +1,41 @@
+.container{
+    display:flex;
+    justify-content: space-between;
+    /* border: 5px dashed red; */
+    gap: 1rem;
+    align-items: center;
+}
+
+.container > * {
+    /* border: 3px dashed green; */
+}
+
+#name-likes {
+    flex-grow: 1;
+}
+
+main button{
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+
+}
+img{
+    width: 100%;
+}
+
+.stacked{
+    position: relative;
+
+
+}
+
+.stacked-text {
+    position: absolute;
+    top: 70%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(128, 128, 128, 0.473);
+    
+}
