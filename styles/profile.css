@@ -1,0 +1,36 @@
+main{
+font-family:"Nunito Sans", sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+main form input {
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+}
+
+main form textarea{
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.submit{
+display: block;
+background-color:green ;
+color: white;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+margin-top: 20px;
+width: 100%;
+}
+
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
