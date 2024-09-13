@@ -9,6 +9,8 @@ main form input {
     background-color: lightgray;
     border: none;
     border-radius: 5px;
+    padding: .5rem;
+    width: 100%;
 }
 
 main form textarea{
@@ -16,6 +18,8 @@ main form textarea{
     border: none;
     border-radius: 5px;
     resize: none;
+    padding: .5rem;
+    width: 100%;
 }
 
 .submit{
@@ -34,3 +38,4 @@ width: 100%;
 .contact-form input[type="submit"]:hover {
     background-color: #0056b3;
 }
+

@@ -15,18 +15,24 @@ html, body {
     min-height: 100vh;
 }
 
-header{
-border-bottom:2px solid gray ;
-display: flex;
-justify-content: space-between;
+header.mobile {
+    border-bottom:2px solid gray ;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px .5rem;
 }
 
-header button{
-border: 0;
-background: none;
-cursor: pointer;
-
+header.mobile button{
+    border: 0;
+    background: none;
+    cursor: pointer;
 }
+
+header.mobile a {
+    text-decoration: none;
+    color: black;
+}
+
 .profilepicture{
     width: 80px;
     height: 80px;
@@ -55,6 +61,7 @@ body {
 main {
     /* Varför? Se bodyflex.txt [3] */
     flex-grow: 1;
+    padding: 0rem .5rem;
 }
 
 footer nav {
@@ -81,4 +88,70 @@ footer .profil-bild {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+
+/* Responsiveness */
+
+.desktop {
+    display: none;
+}
+
+@media only screen and (min-width: 700px) {
+    .mobile {
+        display: none !important;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+
+    header {
+        grid-row: span 2;
+        border-right: 1px solid gray;
+    }
+
+    header.desktop {
+        padding: 1rem;
+    }
+
+    header.desktop > a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .desktop-nav-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .desktop-nav-item img {
+        width: 40px;
+    }
+
+    .desktop-nav-item {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    .desktop-nav-item .profil-bild {
+        border-radius: 50%;
+    }
+
+    main {
+        padding: 0rem 5rem;
+    }
+
+    footer {
+        border-top: 1px solid gray;
+        padding: 0rem 5rem;
+        align-self: end;
+    }
 }
