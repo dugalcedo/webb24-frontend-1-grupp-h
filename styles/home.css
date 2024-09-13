@@ -34,8 +34,22 @@ img{
 
 .stacked-text {
     position: absolute;
-    top: 70%;
+    bottom: 25%;
+    padding: .5rem;
     color: rgb(255, 255, 255);
     background-color: rgba(128, 128, 128, 0.473);
     
+}
+
+.stacked-text h2 {
+    margin: 0;
+}
+
+@media only screen and (min-width: 1000px) {
+    main {
+        padding: 0rem 10rem !important;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
 }
