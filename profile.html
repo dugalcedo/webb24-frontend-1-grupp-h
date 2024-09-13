@@ -1,101 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="styles/profile.css">
-    <title>Postagram - [page subtitle here]</title>
-</head>
-<body>
-    <header class="mobile">
-        <a href="/">
-            <h1>Postagram</h1>  
-        </a>
-        <button>
-            <img src="images/add.circle.svg" alt="add circle icon">
-        </button>
-    </header>
-    <header class="desktop">
-        <a href="/">
-            <h1>Postagram</h1>
-        </a>
-        <nav>
-            <a class="desktop-nav-item" href="/">
-                <img src="images/hem.svg" alt="home icon">
-                Home
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="styles/profile.css">
+        <title>Postagram - [page subtitle here]</title>
+    </head>
+
+    <body>
+        <header class="mobile">
+            <a href="/">
+                <h1>Postagram</h1>
             </a>
-            <a class="desktop-nav-item" href="/explore.html">
-                <img src="images/sök.svg" alt="explore icon">
-                Explore
+            <button>
+                <img src="images/add.circle.svg" alt="add circle icon">
+            </button>
+        </header>
+        <header class="desktop">
+            <a href="/">
+                <h1>Postagram</h1>
             </a>
-            <a class="desktop-nav-item" href="/detail.html">
-                <img src="images/gilla.svg" alt="favorites icon">
-                Favorites
-            </a>
-            <a class="desktop-nav-item" href="/profile.html">
-                <img src="https://picsum.photos/seed/fa/300/300" alt="" class="profil-bild">
-                Profile
-            </a>
-        </nav>
-    </header>
+            <nav>
+                <a class="desktop-nav-item" href="/">
+                    <img src="images/hem.svg" alt="home icon">
+                    Home
+                </a>
+                <a class="desktop-nav-item" href="/explore.html">
+                    <img src="images/sök.svg" alt="explore icon">
+                    Explore
+                </a>
+                <a class="desktop-nav-item" href="/detail.html">
+                    <img src="images/gilla.svg" alt="favorites icon">
+                    Favorites
+                </a>
+                <a class="desktop-nav-item" href="/profile.html">
+                    <img src="https://picsum.photos/seed/fa/300/300" alt="" class="profil-bild">
+                    Profile
+                </a>
+            </nav>
+        </header>
 
 
-    <main>
-     <form>
-        <strong>
-        <p>Name</p>
-    <input type="text" name="name" placeholder="Your name"/>
-    
-    
-    <p>Lastname</p>
-    <input type="text" name="Lastname" placeholder="Last name"/>
-
-    <p>Email</p>
-    <input type="text" name="Email" placeholder="Email"/>
-    
-    
-    <p>Age</p>
-    <input type="number" name="Age" placeholder="Age"/>    
-    
-    
-    <p id="Aboutme">About me</p>
-    <textarea type="text" name="Aboutme" placeholder="About me"></textarea>
+        <main>
+            <form>
+                <strong>
+                    <label for="form-name">Name</label>
+                    <input id="form-name" type="text" name="name" placeholder="Your name" />
 
 
+                    <label for="form-lastname">Lastname</label>
+                    <input id="form-lastname" type="text" name="Lastname" placeholder="Last name" />
+
+                    <label for="form-email">Email</label>
+                    <input id="form-email" type="text" name="Email" placeholder="Email" />
 
 
+                    <label for="form-age">Age</label>
+                    <input id="form-age" type="number" name="Age" placeholder="Age" />
 
-    <p>Gender</p>
-    <input type="name" name="Gender"/ placeholder="Gender">  
 
+                    <label for="form-about" id="Aboutme">About me</label>
+                    <textarea id="form-about" type="text" name="Aboutme" placeholder="About me"></textarea>
 
-    <input class="submit" type="submit"/>
+                    <label for="form-gender">Gender</label>
+                    <input id="form-gender" type="name" name="Gender" placeholder="Gender">
 
-</strong>
+                    <input class="submit" type="submit" />
+
+                </strong>
 
 
 
 
 
 
-     </form>
-    </main>
-    <footer>
-        <nav>
-            <a href="./index.html" class="nav-item">
-                <img src="./images/hem.svg" alt="home icon">
-            </a>
-            <a href="./explore.html" class="nav-item">
-                <img src="./images/sök.svg" alt="explore icon">
-            </a>
-            <a href="./detail.html" class="nav-item">
-                <img src="./images/gilla.svg" alt="favorites icon">
-            </a>
-            <a href="./profile.html" class="nav-item">
-                <img src="https://picsum.photos/seed/fa/300/300" alt="" class="profil-bild">
-            </a>
-        </nav>
-    </footer>
-</body>
+            </form>
+        </main>
+        <footer>
+            <nav>
+                <a href="./index.html" class="nav-item">
+                    <img src="./images/hem.svg" alt="home icon">
+                </a>
+                <a href="./explore.html" class="nav-item">
+                    <img src="./images/sök.svg" alt="explore icon">
+                </a>
+                <a href="./detail.html" class="nav-item">
+                    <img src="./images/gilla.svg" alt="favorites icon">
+                </a>
+                <a href="./profile.html" class="nav-item">
+                    <img src="https://picsum.photos/seed/fa/300/300" alt="" class="profil-bild">
+                </a>
+            </nav>
+        </footer>
+    </body>
+
 </html>
